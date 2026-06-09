@@ -6,6 +6,13 @@ box-sizing:border-box;
 font-family:Arial, sans-serif;
 }
 
+img{
+    width: 350px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 body{
 background:#f3f6fb;
 padding:20px;
