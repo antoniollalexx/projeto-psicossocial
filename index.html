@@ -1,83 +1,59 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Questionário Psicossocial</title>
-<link rel="stylesheet" href="CSS/style.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="CSS/login.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
+                        
 <body>
+                  <div  class="imgfundo">
+                    <img src="logo.png" alt="">
+                  </div>          
+    <div class="wrapper">
+        <form action="">
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Username" id="login" required>
+                <i class='bx bxs-user'></i>   
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Password" id="senha" required> 
+                <i class='bx bxs-lock-alt'></i> 
+            </div>
 
-    <ul>
-         <a href="login.html"><button>Login</button></a>
-    </ul>
-<div class="container">
 
-<div class="progress">
-<div class="progress-bar" id="progressBar"></div>
-</div>
-<img src="logo.png" alt="">
+            <div class="remember-forgot">
+                <label><input type="checkbox">Salvar Acesso 
+                </label>
+                <a href="#">Esqueci minha Senha.</a>
+            </div>
+            
+            
+            <input type="submit" value="Login" class="bnt-login" onclick="bnt(); return false" >
+            
 
-<div class="logo-area">
-<h2>ELIENE FERNANDES DA SILVA LTDA</h2>
-</div>
 
-<form id="quizForm">
+            <div class="register-link">
+                <p>Criar Acesso. <a href="#">Registrar</a></p>
+            </div>
+        </form>
+    </div>
 
-<!------------------------------------------------------- Página 1 --------------------------------------------------------------------------------->
-<div class="step">
+   <script>
+      function bnt() { 
+            let login = document.getElementById('login').value;
+            let senha = document.getElementById('senha').value;
 
-<h1 class="section-title">DEMANDAS</h1>
-<p class="subtitle">Carga de trabalho, ritmos de tarefa e exigências cognitivas.</p>
-
-<div id="questions1"></div>
-
-</div>
-
-<!------------------------------------------------------- Página 2 ---------------------------------------------------------------------------------->
-<div class="step hidden">
-
-<h1 class="section-title">CONTROLE</h1>
-<p class="subtitle">Autonomia do trabalhador.</p>
-
-<div id="questions2"></div>
-
-</div>
-
-<!-------------------------------------------------------- Página 3 --------------------------------------------------------------------------------->
-<div class="step hidden">
-
-<h1 class="section-title">APOIO DA GESTÃO</h1>
-<p class="subtitle">Suporte da liderança.</p>
-
-<div id="questions3"></div>
-
-</div>
-
-<!--------------------------------------------------------- Página 4 --------------------------------------------------------------------------------->
-<div class="step hidden">
-
-<h1 class="section-title">SUPORTE DOS COLEGAS</h1>
-<p class="subtitle">Relacionamento com colegas.</p>
-
-<div id="questions4"></div>
-
-</div>
-
-</form>
-
-<div class="buttons">
-
-<button class="btn-back" onclick="voltar()">Voltar</button>
-
-<button class="btn-next" onclick="proximo()">Próxima</button>
-
-</div>
-
-<div id="resultado"></div>
-
-</div>      
-<script src="JS/script.js"></script>
+            if(login == "alessandro" && senha =="123"){
+                
+                location.href="questionario.html";
+            }else{
+                alert('Usuário e Senha incorreto!');
+            }
+        }
+    </script>   
 </body>
 </html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Questionário Psicossocial</title>
+<link rel="stylesheet" href="CSS/style.css">
+
+</head>
+<body>
+
+    
+<div class="container">
+
+<div class="progress">
+<div class="progress-bar" id="progressBar"></div>
+</div>
+<img src="logo.png" alt="">
+
+<div class="logo-area">
+<h2>ELIENE FERNANDES DA SILVA LTDA</h2>
+</div>
+
+<form id="quizForm">
+
+<!------------------------------------------------------- Página 1 --------------------------------------------------------------------------------->
+<div class="step">
+
+<h1 class="section-title">DEMANDAS</h1>
+<p class="subtitle">Carga de trabalho, ritmos de tarefa e exigências cognitivas.</p>
+
+<div id="questions1"></div>
+
+</div>
+
+<!------------------------------------------------------- Página 2 ---------------------------------------------------------------------------------->
+<div class="step hidden">
+
+<h1 class="section-title">CONTROLE</h1>
+<p class="subtitle">Autonomia do trabalhador.</p>
+
+<div id="questions2"></div>
+
+</div>
+
+<!-------------------------------------------------------- Página 3 --------------------------------------------------------------------------------->
+<div class="step hidden">
+
+<h1 class="section-title">APOIO DA GESTÃO</h1>
+<p class="subtitle">Suporte da liderança.</p>
+
+<div id="questions3"></div>
+
+</div>
+
+<!--------------------------------------------------------- Página 4 --------------------------------------------------------------------------------->
+<div class="step hidden">
+
+<h1 class="section-title">SUPORTE DOS COLEGAS</h1>
+<p class="subtitle">Relacionamento com colegas.</p>
+
+<div id="questions4"></div>
+
+</div>
+
+</form>
+
+<div class="buttons">
+
+<button class="btn-back" onclick="voltar()">Voltar</button>
+
+<button class="btn-next" onclick="proximo()">Próxima</button>
+
+</div>
+
+<div id="resultado"></div>
+
+</div>      
+<script src="JS/script.js"></script>
+</body>
+</html>
