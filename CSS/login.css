@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*font-family: "Poppins", sans-serif;*/
+
+}
+
+
+
+    
+
+/* Corpo do login */
+body {
+      
+        width: 100%;
+        overflow-x: hidden;
+        background-image: url('fundo-login.jpg');
+}
+
+
+.imgfundo img{
+    height: 210px;
+    position: relative;
+    left: 40%;
+    
+    
+   
+    
+   
+}
+
+/* Caixa do Login */
+.wrapper {
+    width: 450px;
+    position: relative;
+    left: 40%;
+    background: transparent;
+    border: 4PX solid rgba(0, 0, 0, 0.2);
+    color: #fff;
+    border-radius: 20px;
+    padding: 30px 40px;
+
+}
+/* Texto Login */
+.wrapper h1 {
+    font-size: 36px;
+    text-align: center;
+
+}
+
+/* Label Login e Senha */
+.wrapper .input-box {
+    position: relative;
+    width: 85%;
+    height: 50PX;
+    margin: 30px;
+
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 20px 20px;
+
+}
+
+
+.input-box input::placeholder {
+    color: #fff;
+
+}
+
+/* Icones */
+.input-box i {
+    position: absolute;
+    right: 20PX;
+    top: 35%;
+    transform: translate(-50%) ;
+
+}
+
+.wrapper .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15 0 15px;
+    
+    
+}
+
+.remember-forgot label input {
+    accent-color: #fff;
+    margin-right: 3px;
+   
+
+}
+
+.remember-forgot a {
+    color: #fff;
+    text-decoration: none;
+    
+
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+
+}
+
+/* Botão Login */
+.wrapper .bnt-login {
+    width: 100%;
+    height: 45px;
+    background: #fffffd;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #000000;
+    font-weight: 600;
+
+ 
+  
+
+}
+
+.wrapper .bnt-login:hover{
+    transition: background, color 0.6s;
+    background: rgb(0, 97, 243);
+    color: #ededed;
+   
+}
+
+
+.wrapper .register-link {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+
+}
+
+.register-link p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+}

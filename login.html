@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="CSS/login.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+                        
+<body>
+                  <div  class="imgfundo">
+                    <img src="logo.png" alt="">
+                  </div>          
+    <div class="wrapper">
+        <form action="">
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Username" id="login" required>
+                <i class='bx bxs-user'></i>   
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Password" id="senha" required> 
+                <i class='bx bxs-lock-alt'></i> 
+            </div>
+
+
+            <div class="remember-forgot">
+                <label><input type="checkbox">Salvar Acesso 
+                </label>
+                <a href="#">Esqueci minha Senha.</a>
+            </div>
+            
+            
+            <input type="submit" value="Login" class="bnt-login" onclick="bnt(); return false" >
+            
+
+
+            <div class="register-link">
+                <p>Criar Acesso. <a href="#">Registrar</a></p>
+            </div>
+        </form>
+    </div>
+
+   <script>
+      function bnt() { 
+            let login = document.getElementById('login').value;
+            let senha = document.getElementById('senha').value;
+
+            if(login == "alessandro" && senha =="123"){
+                
+                location.href="index.html";
+            }else{
+                alert('Usuário e Senha incorreto!');
+            }
+        }
+    </script>   
+</body>
+</html>
